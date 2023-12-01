@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($contraseña, $row['contraseña'])) {
             // Credenciales válidas, iniciar sesión
             $_SESSION['usuario'] = $usuario;
-            header("Location: agregar_usuario.php");
+            header("Location: ../mostrar.php");
             exit();
         } else {
             echo "Contraseña incorrecta";
