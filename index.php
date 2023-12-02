@@ -20,6 +20,7 @@
         </form>
     </div>
 
+    
     <?php
     include("registrar.php");
     ?>
