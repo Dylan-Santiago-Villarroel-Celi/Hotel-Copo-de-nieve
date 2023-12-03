@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>pagina_animacion</title>
     <link rel="stylesheet" href="estilo_animacion1.css">
     <script src="main.js"></script>
+  
 </head>
 <body>
 <div class="page-loader">
@@ -45,5 +46,7 @@
           </div>
         </div>
       </div>
+      
+      
 </body>
 </html>

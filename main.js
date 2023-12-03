@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
       // Después de ocultar el preloader, redirige a la página principal
       setTimeout(function () {
-        window.location.href = "index.php"; // redireige a index momentaneamente en desarrollo
+        window.location.href = "reserva_busqueda/index.html"; // redireige a index momentaneamente en desarrollo
       }, 500); // Tiempo de espera antes de la redirección
     }, 3000); //Tiempo de espera antes de ocultar el preloader
   });
