@@ -3,7 +3,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submitReservation"])) 
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "registro4";
+    $dbname = "registro";
 
 
     $conn = new mysqli($servername, $username, $password, $dbname);
