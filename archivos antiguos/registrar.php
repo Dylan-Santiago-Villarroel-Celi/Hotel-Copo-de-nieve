@@ -24,7 +24,7 @@ if (isset($_POST['register'])) {
 
         // Verifica si la consulta se ejecutó con éxito
         if ($resultado) {
-            header("Location: hotel.php");
+            header("Location: hoteles/habitaciones.php");
             exit(); // Asegura que el script se detenga después de la redirección
             
         } else {

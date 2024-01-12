@@ -1,0 +1,741 @@
+/*Funetes personalizadas*/
+@font-face{
+    font-family:"TrebuchetMS" ;
+    src: url('fonts/TrebuchetMS.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:"BebasNeue" ;
+    src: url('fonts/BebasNeue.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url('fonts/websymbols-regular-webfont.eot');
+    src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sunshine";
+    src: url('fonts/AlittleSunshine.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Estilos Genereles*/
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+head{
+    position: relative;
+}
+
+body{
+    /*background: url("img/");*/
+    background-color: white;
+}
+
+.wrap{
+    width: 1250;
+    margin: 0px auto;
+}
+
+.icon{
+    font-family: "WebSymbolsRegular";
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+/*Cabecera*/
+#header{
+ width: 100%;
+ height: 70px;
+ background-color: #c57d98;
+ font-family: Sunshine;
+ color: white;
+}
+
+
+
+#logo{
+    float:left;
+    width: 200px;
+    margin-left: 90px;
+    margin-top: 5px;
+    position: absolute;
+}
+
+#logo img{
+    width: 200px;
+    opacity: 0.5;
+    transition: all 300ms;
+}
+
+#logo img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+#menu{
+    position: absolute;
+    left: 300px;
+    float: right;
+    height: 70px;
+   /* font-family: "finger"; */
+    background: transparent;
+}
+
+#menu #titulo{
+    font-family: "finger";
+    font-size: 30px;
+
+}
+#titulo a{
+    transition: color 500ms, transform 500ms;
+}
+
+#menu #titulo a:hover{
+    background: transparent;
+    color: white;
+    cursor: none;
+    transform: scale(1.1,1.1);
+    /*text-decoration: 2px underline #00ceae;*/
+
+}
+
+#menu ul li{
+    font-size: 24px;
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+
+#menu ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+#menu ul li a:hover{
+    font-family: "finger";
+    color: white;
+    transform: scale(1.2,1.2);
+   /* text-decoration: 2px underline #00ceae;*/
+}
+
+/*Buscar*/
+#buscar{
+    width: 50%;
+    font-family: "TrebuchetMS";
+    margin: 5px auto;
+    min-height: 120px;
+}
+
+#search{
+    display: block;
+    float: left;
+    width: 75%;
+    border-radius: 60px;
+    margin-top: 10px;
+    margin-left: 90px;
+}
+
+#search input[type="text"]{
+   width: 80%;
+   height: 30px;
+   border: 1px solid #d39a69;
+   padding-left: 25px;
+   border-radius: 60px;
+   padding-right: 25px;
+   background-color: transparent;
+   color: gray;
+   transition: all 300ms;
+}
+
+#search input[type="text"]:focus{
+    color: black;
+    border: 1px solid #00ceae;
+    outline: 1px solid #00ceae;
+}
+
+#search input[type="button"]{
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    color: #555;
+    padding-left: 6px;
+}
+
+.corazon{
+    display: block;
+    float: right;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px #222, 1px 1px 0px #450505;
+    color: #c57d98;
+    animation: latidos 0.5s infinite;
+    transform-origin: center;
+    margin-top: -5px;
+    margin-right: 15px;
+}
+
+@keyframes latidos{
+    from{transform: none;}
+    50%{transform: scale(1.2);}
+    to{transform: none;}
+}
+.corazon:hover{
+    color: black;
+}
+
+/*banner*/
+#banner{
+    width: 98%;
+    height: 450px;
+    border: 10px solid white;
+    box-shadow: 0px 0px 2px gray;
+    background-image: url("img/belleza-chica.webp");
+    background-size: cover;
+    background-position: -200px -200px;
+    float: left;
+    overflow: hidden;
+    animation: backBanner 10s linear;
+}
+
+@keyframes backBanner{
+    0%{background-position: 0px 0px;}
+    100%{background-position: -200px -200px;}
+}
+
+#banner h1{
+    width: 450px;
+    float: right;
+    text-transform: uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 35px;
+    font-weight: normal;
+    text-align: right;
+    margin-right: 80px;
+    margin-top: 290px;
+    animation: showText 10s linear;
+}
+
+@keyframes showText{
+    0%{
+        transform: translateX(-600%) scale(5,5);
+        opacity: 1;
+    }
+
+    50%{
+        transform: translateX(-600%) scale(5,5);
+        opacity: 1;
+    }
+    75%{
+        transform: translateX(-600%) scale(5,5);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(-600%) scale(1,1);
+        text-shadow: 2px 2px 1px black;
+        color: white;
+        opacity: 1;
+    }
+}
+
+
+#cards h1{
+    width: 100%;
+    float: left;
+    text-transform: uppercase;
+    font-family: finger;
+    font-weight: normal;
+    text-align: center;
+    color: #c57d98;
+    font-size: 35px;
+    margin-top: 20px;
+    -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+  #cards h1::before{
+    content:'';
+    height: 3px;
+    width: 100px;
+    background: #c57d98;
+    display: inline-block;
+    margin-top: -5px;
+    margin-right: 30px;
+    vertical-align: middle;
+  } 
+
+  #cards h1::after{
+    content:'';
+    height: 3px;
+    width: 100px;
+    background: #c57d98;
+    display: inline-block;
+    margin-top: -5px;
+    margin-left: 30px;
+    vertical-align: middle;
+  } 
+
+
+  .card{
+    float: left;
+    width: 20%;
+    height: 230px;
+    border: transparent;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #ddd;
+    background-color: white;
+    overflow: hidden;
+    margin: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: all 300ms;
+}
+
+.card img{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    transform: rotate(0deg) scale(1);
+}
+
+.card:hover img{
+    transform: rotate(0deg) scale(1.2);
+}
+
+.card .category{
+    width: 80%;
+    margin-top: -30px;
+    height: 50px;
+    padding-top: 10px;
+    margin-left: 20px;
+    font-family: "TrebuchetMS";
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    background-color: white;
+    position: relative;
+    z-index: 3;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.card:hover .category{
+    color: #00ceae;
+    animation: showCategory 400ms linear;
+}
+
+@keyframes showCategory{
+    from{
+        transform: translateY(-300%);
+        color: black;
+    }
+    to{
+        transform: translateY(0%);
+        color: white;
+    }
+}
+
+#about{
+    width: 100%;
+    background-image: url("img/makeup.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0px;
+    opacity: 0.8;
+}
+#about article{
+    display: block;
+    float: left;
+    margin-left: 300px;
+    margin-top: -30px;
+}
+
+#about article .category{
+    font-size: 50px;
+    font-family: "BebasNeue";
+    color: white;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: right;
+    text-shadow: 2px 2px 1px black;
+}
+
+#about article .category:hover{
+    color: black;
+    text-shadow: none;
+    text-decoration: underline;
+    text-decoration-color: #00ceae;
+}
+
+#noticias{
+    width: 100%;
+    padding: 20px;
+}
+
+#noticias h2{
+    width: 100%;
+    font-family: finger;
+    color: #c57d98;
+    font-size: 35px;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#noticias h2::before{    
+    content:'';
+    height: 3px;
+    width: 100px;
+    background: #c57d98;
+    display: inline-block;
+    margin-top: -5px;
+    margin-right: 30px;
+    vertical-align: middle; }
+
+#noticias h2::after{
+    content:'';
+    height: 3px;
+    width: 100px;
+    background: #c57d98;
+    display: inline-block;
+    margin-top: -5px;
+    margin-left: 30px;
+    vertical-align: middle;
+}
+
+.columna{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+
+}
+
+#noticias article{
+    width: 45%;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 60px;
+    padding: 40px;
+    font-family: "BebasNeue";
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+#noticias article h4{
+    display: block;
+    font-size: 30px;
+    margin: 3px;
+}
+
+#noticias article h4 a{
+    text-decoration: none;
+    color: black;
+}
+
+#noticias article h4 a:hover{
+    text-decoration: underline;
+    text-decoration-color: #00ceae;
+}
+
+#noticias .data{
+    float: right;
+    background-color: #c57d98;
+    color: white;
+    height: 30px;
+    line-height: -10px;
+    padding: 4px;
+    font-size: 13px;
+    border-radius: 0px 0px 0px 5px;
+}
+
+#noticias .data span{
+    margin: 6px;
+    font-size: 15px;
+}
+
+#noticias .data span img{
+    height: 30px;
+    filter: invert();
+}
+
+#noticias p{
+    font-family: "TrebuchetMS";
+    font-size: 18px;
+}
+
+#gallery{
+    width: 100%;
+    height: 565px;
+    padding: 20px;
+}
+
+#gallery h2{
+    width: 100%;
+    font-family: finger;
+    color: #8e7dd2;
+    font-size: 35px;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#gallery h2::before{    
+    content:'';
+    height: 3px;
+    width: 100px;
+    background: #8e7dd2;
+    display: inline-block;
+    margin-top: -5px;
+    margin-right: 30px;
+    vertical-align: middle; }
+
+#gallery h2::after{
+    content:'';
+    height: 3px;
+    width: 100px;
+    background: #8e7dd2;
+    display: inline-block;
+    margin-top: -5px;
+    margin-left: 30px;
+    vertical-align: middle;
+}
+
+#gallery .element{
+    position: relative;
+    width: 20%;
+    height: 250px;
+    border: 1px solid black;
+    color: black;
+    float: left;
+    margin-top: 10px;
+    margin-left: 40px;
+    text-align: center;
+    line-height: 120px;
+    border-radius: 20px;
+}
+
+#gallery .element1{
+ background-image: url("img/hairstyle-long-hair-woman.png");
+ background-position: center;
+ background-size: cover;
+}
+
+#gallery .element2{
+    background-image: url("img/hairstyle-woman1.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#gallery .element3{
+    background-image: url("img/belleza.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+#gallery .element4{
+    background-image: url("img/belleza-chica.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+#gallery .element5{
+    background-image: url("img/hairstyle-woman.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#gallery .element6{
+    background-image: url("img/makeup.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#gallery .element7{
+    background-image: url("img/spa.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+#gallery .element8{
+    background-image: url("img/hairstyle-woman2.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#gallery p{
+    width: 100%;
+    height: 250px;
+    font-family: "BebasNeue";
+    line-height: 250px;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 20px;
+    inset: 0px 0px auto;
+    transform-origin: 100% 75% 0px;
+    transform: rotateY(-30deg);
+    transition: all 400ms ease 0s;
+}
+#gallery p:hover{
+   background-color: #ff827d;
+   color: black;
+   text-decoration: underline;
+   transform-origin: 100% 75% 0px;
+   transform: rotateY(0deg);
+   transition: all 400ms ease 0s;
+   cursor: pointer;
+}
+
+#footer{
+    width: 100%;
+    height: 450px;
+    background-color: #8e7dd2;
+    color: white;
+    overflow: hidden;
+}
+
+#footer .wrap > div{
+    float: left;
+    width: 320px;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: #c57d98;
+    font-family: "TrebuchetMS";
+}
+
+#footer a{
+    text-decoration: none;
+    color: black;
+    transition: all 300ms;
+}
+
+#footer h5{
+    display: block;
+    background: url("img/pxgray.png"), white;
+    height: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: Sunshine;
+    font-size: 20px;
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+#footer ul{
+    text-align: left;
+    margin: 20px;
+    font-size: 20px;
+}
+
+#footer ul li{
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+
+#footer ul li a{
+    display: block;
+    height: 40px;
+    transition: all 300ms;
+}
+#footer ul li:hover a{
+    padding-left: 40px;
+    color: white;
+    width: 100%;
+}
+#footer iframe{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px gray;
+}
+#footer #info{
+    color: black;
+    font-family: "TrebuchetMS";
+}
+#footer #info a{
+    font-size: 20px;
+}
+#footer #info a:hover{
+    color: white;
+}
+#footer #info span{
+    font-size: 18px;
+    margin-left: 15px;
+}
+

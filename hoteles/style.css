@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: aqua;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+nav {
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #eca023;
+}
+
+.habitacion-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -10px; /* Aumenta el margen superior */
+}
+
+.habitacion-inner-container {
+    display: flex;
+    flex-wrap: wrap; /* Asegura que las habitaciones se envuelvan correctamente en dispositivos más pequeños */
+    justify-content: space-around; /* Distribuye las habitaciones uniformemente */
+}
+
+.habitacion {
+    margin: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.habitacion img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.habitacion h2,
+.habitacion p {
+    margin: 10px;
+}

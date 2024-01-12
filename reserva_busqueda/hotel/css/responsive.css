@@ -1,0 +1,54 @@
+@media(max-width:1460px){
+    .wrap{
+        width: 90%;
+    }
+   #menu ul li{
+    font-size: 20px;
+   }
+   #banner{
+    height: 350px;
+   }
+   #banner h1{
+    width: 100%;
+    float:  right;
+    font-size:  35px;
+    text-align: center;
+    margin-top: 280px;
+    margin-right: -117px;
+   }
+   #footer.wrap>div{
+    width: 27%;
+   }
+}
+@media (max-width:1080){
+    #menu #titulo{
+        font-size: 18px;
+    }
+    #menu ul li{
+        font-size: 18px;
+        margin: 1px auto;
+        padding: 10px;
+    }
+    #banner h1{
+        font-size: 25px;
+        text-align: left;
+    }
+    .card{
+        width: 18%;
+    }
+    #about article .category{
+        font-size: 30px;
+    }
+    #noticias article{
+        width: 43%;
+    }
+    #galley .element{
+        width: 90%;
+    }
+    #footer{
+        margin-top: 10px;
+    }
+    #footer .wrap>div {
+        width: 25%;
+    }
+}
